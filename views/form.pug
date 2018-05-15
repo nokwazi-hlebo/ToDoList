@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+   <head>
+      meta(charset='utf-8')
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+      <title>Todo List</title>
+      link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+      style
+         include style.css
+
+        
+   </head> 
+
+   <body>
+   <h1 class="header">Set your  day</h1>
+
+  
+
+
+        
+    ul
+      each data2, index in data
+         li= data2
+            a(class="close" href='/delete/'+index+'').fa.fa-trash-o.fa-lg
+      form(action = "/", method = "POST")
+        
+         div
+           
+            input(name = "to" nothing = " ")
+         div(id="lists")
+         
+         button(class="btn" type = "submit" name="addTask") Add task
+div(class="footer")
+  p Coded by Nokwazi Hlebo @2018
+  <a href="https://github.com/nokwazi-hlebo" target="_blank" class="social"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+div
