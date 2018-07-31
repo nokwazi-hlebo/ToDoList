@@ -76,4 +76,4 @@ app.get('/', function(req, res){
 //    console.log(req.body);
 //    res.send("recieved your request!");
 // });
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
